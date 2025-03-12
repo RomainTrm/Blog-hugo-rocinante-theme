@@ -1,7 +1,15 @@
-<h2>
+<nav>
   {{ if and (.IsHome) (not (.Scratch.Get "pagenumber")) }}
-    › {{ .Site.Title }}
+    <div class="home">› Home</div>
   {{ else }}
-    <a href="{{ .Site.BaseURL }}">‹ {{ .Site.Title }}</a>
+    <a class="home" href="{{ .Site.BaseURL }}">‹ Home</a>
   {{ end }}
-</h2>
+  <div></div>
+  <div>
+    <a href="{{ .Site.BaseURL }}/tags/post">Posts</a>
+    <a href="{{ .Site.BaseURL }}/tags/talk">Talks</a>
+    {{ if (.Page.GetPage "/about-me") }}
+      <a href="{{ .Site.BaseURL }}/about-me">About me</a>
+    {{ end }}
+  </div>
+</nav>
