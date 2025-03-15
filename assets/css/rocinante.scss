@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-  margin: 1em;
+  padding: 1em;
   display: flex;
   overflow: auto;
   justify-content: space-between;
@@ -207,7 +207,8 @@ main {
 }
 
 .about h2 {
-  margin: 1.5em 0 0.25em 0;
+  padding: 1.5em 0 0.25em 0;
+  margin: 0;
   a {
     text-decoration: none;
     border: none;
