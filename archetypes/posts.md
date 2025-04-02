@@ -9,7 +9,7 @@ draft: true
 
 ---
 
-## COMMENTS
+## Comments
 
 <!--Add your comment here-->
 
@@ -17,7 +17,7 @@ Wish to comment? Please, add your comment by [sending me a pull request](https:/
 
 ---
 
-## COMMENTAIRES
+## Commentaires
 
 <!--Ajoutez votre commentaire ici-->
 
