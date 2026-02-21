@@ -15,7 +15,7 @@
 {{- end -}}
 
 {{ with .Site.Params.favicon }}
-<link rel="shortcut icon" href="{{ . }}">
+{{ printf `<link rel="shortcut icon" href="%s/%s">` $.Site.BaseURL $.Site.Params.favicon | safeHTML }}
 {{ end }}
 
 {{ range .AlternativeOutputFormats -}}
