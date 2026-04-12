@@ -1,5 +1,6 @@
 <meta charset="utf-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self'; connect-src 'self'; base-uri 'self'; manifest-src 'self'; media-src 'self'">
+<!-- default-src 'self'; script-src 'self'; -->
+<meta http-equiv="Content-Security-Policy" content="style-src 'self' 'unsafe-inline'; img-src 'self'; connect-src 'self'; base-uri 'self'; manifest-src 'self'; media-src 'self'">
 <meta http-equiv="Strict-Transport-Security" content="max-age=63072000; includeSubDomains; preload">
 <meta http-equiv="X-Content-Type-Options" content="nosniff">
 <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
@@ -7,7 +8,7 @@
 
 <title>{{ if ne .Title .Site.Title }}{{ .Title }} · {{ end }}{{ .Site.Title }}</title>
 
-{{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
+{{ $options := (dict "outputStyle" "compressed" "enableSourceMap" false) }}
 {{ $style := resources.Get "css/rocinante.scss" | css.Sass $options  }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}" />
 
