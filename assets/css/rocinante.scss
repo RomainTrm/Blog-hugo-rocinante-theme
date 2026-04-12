@@ -146,6 +146,13 @@ a > img:hover {
   opacity: 0.75;
   transition: 0.25s;
 }
+
+.post-list {
+  img {
+    max-width: 15em;
+  }
+}
+
 figure {
   width: 100%;
   margin: 2em 0;
