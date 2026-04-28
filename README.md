@@ -119,6 +119,14 @@ In order to see your site in action, run Hugo's built-in local server.
 
 Now enter [`localhost:1313`](http://localhost:1313/) in the address bar of your browser.
 
+## Analytics
+
+Some lightweight, GDPR compatible analytics solution has been added: [https://www.goatcounter.com/](GoatCounter).  
+Other solutions considered:  
+
+- [https://umami.is/](Unami)
+- [https://lightweightanalytics.com/](LightweightAnalytics)
+
 ## License
 
 MIT
