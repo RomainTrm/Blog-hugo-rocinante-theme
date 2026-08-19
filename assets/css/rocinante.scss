@@ -56,7 +56,7 @@ strong, b {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  margin: 1.5em 0 1em 0;
+  margin: 1em 0 0.5em 0;
   line-height: 1em;
 }
 
@@ -379,4 +379,26 @@ footer {
       grid-column-end: 3;
     }
   }
+}
+
+.rb-markdown-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+
+  a {
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    line-height: 1;
+    margin-bottom: -1em;
+    color: #333;
+  }
+
+  &:hover a {
+    opacity: 1;
+  }
+}
+
+.post-list .rb-markdown-heading a {
+  display: none;
 }
