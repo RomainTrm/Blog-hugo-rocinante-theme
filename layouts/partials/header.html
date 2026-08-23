@@ -6,10 +6,10 @@
   {{ end }}
   <div></div>
   <div>
-    <a href="{{ .Site.BaseURL }}/tags/post">Posts</a>
-    <a href="{{ .Site.BaseURL }}/tags/talk">Talks</a>
+    <a href="{{ .Site.BaseURL }}tags/post">Posts</a>
+    <a href="{{ .Site.BaseURL }}tags/talk">Talks</a>
     {{ if (.Page.GetPage "/about") }}
-    <a href="{{ .Site.BaseURL }}/about">About</a>
+    <a href="{{ .Site.BaseURL }}about">About</a>
     {{ end }}
   </div>
 </nav>
