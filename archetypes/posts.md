@@ -2,6 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 tags: [talk, post, en, fr]
+description: "custom description (optional)"
 draft: true
 ---
 
