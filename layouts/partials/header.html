@@ -11,5 +11,8 @@
     {{ if (.Page.GetPage "/about") }}
     <a href="{{ .Site.BaseURL }}about">About</a>
     {{ end }}
+    {{ if (.Page.GetPage "/hire-me") }}
+    <a href="{{ .Site.BaseURL }}hire-me">Hire Me</a>
+    {{ end }}
   </div>
 </nav>
